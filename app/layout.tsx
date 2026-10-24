@@ -1,11 +1,10 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Snort 3 · Guía técnica IDS / IPS',
   description: 'Guía visual y práctica de Snort 3: instalación, configuración, reglas, IDS, IPS, logs, iptables y laboratorios defensivos.',
-  generator: 'v0.app',
+  generator: 'Snort Guide — Jesús Sanabria, Estudiante de ciberseguridad en FUSALMO',
   icons: {
     icon: [
       {
@@ -42,7 +41,6 @@ export default function RootLayout({
     <html lang="es">
       <body className="antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
